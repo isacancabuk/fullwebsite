@@ -40,13 +40,9 @@ aside a:hover {
   color: #4f4f4f;
 }
 
-aside .name {
+aside .gallery {
   font-size: 22px;
   color: #212121;
-}
-
-aside .gallery {
-  color: #4f4f4f;
 }
 
 main {
@@ -84,11 +80,6 @@ main {
 .block p {
   font-size: 14px;
   color: #a4a4a4;
-}
-
-main:nth-of-type(5) {
-  grid-column-start: 2;
-  grid-column-end: 4;
 }
 
 footer {
