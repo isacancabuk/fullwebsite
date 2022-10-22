@@ -89,13 +89,30 @@ footer {
 }
 
 .empty {
-  grid-area: empty;
   height: 98vh;
+  grid-area: empty;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #bbbbbb;
+  padding-right: 10px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 28px;
 }
 
-@media screen and (max-width: 760px) {
+.empty a {
+  color: #212121;
+  text-decoration: none;
+}
+
+.empty a:hover {
+  color: #bbbbbb;
+}
+
+@media screen and (max-width: 790px) {
   body {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,6 +133,23 @@ footer {
   }
 
   .empty {
-    grid-area: none;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-bottom: 10px;
+  }
+
+  .empty p {
+    padding-right: 5px;
+  }
+
+  .empty a {
+    padding-right: 5px;
+  }
+
+  .empty > div {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

@@ -14,7 +14,6 @@ body {
     'aside main empty'
     'footer footer footer';
   grid-template-columns: 1fr 4fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
 }
 
 aside {
@@ -46,7 +45,7 @@ aside .works {
 
 main {
   grid-area: main;
-  height: 98vh;
+  height: 100%;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -58,12 +57,12 @@ main hr {
   margin: 20px 0px;
   border: #4f4f4f solid 1px;
   background-color: #4f4f4f;
-  width: 920px;
+  width: 880px;
 }
 
 .block1 {
-  width: 920px;
-  height: 300px;
+  width: 880px;
+  height: 250px;
   display: flex;
   background-color: white;
   color: #4f4f4f;
@@ -104,8 +103,8 @@ main hr {
 }
 
 .block2 {
-  width: 920px;
-  height: 400px;
+  width: 880px;
+  height: 340px;
   display: flex;
   background-color: white;
   color: #4f4f4f;
@@ -162,7 +161,25 @@ footer {
 }
 
 .empty {
+  height: 98vh;
   grid-area: empty;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #bbbbbb;
+  padding-right: 10px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 28px;
+}
+
+.empty a {
+  color: #212121;
+  text-decoration: none;
+}
+
+.empty a:hover {
+  color: #bbbbbb;
 }
 
 @media screen and (max-width: 760px) {
@@ -183,5 +200,27 @@ footer {
 
   main {
     align-items: flex-start;
+  }
+
+  .empty {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-bottom: 10px;
+  }
+
+  .empty p {
+    padding-right: 5px;
+  }
+
+  .empty > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -47,13 +47,53 @@ aside .contact {
 
 main {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  line-height: 1.4em;
+}
+
+main a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #212121;
+  padding-bottom: 2px;
+}
+
+main a:hover {
+  color: #bbbbbb;
+}
+
+main p {
+  font-size: 14px;
+  color: #bbbbbb;
+  padding-bottom: 10px;
 }
 
 footer {
   grid-area: footer;
+  font-size: 14px;
+  color: #a4a4a4;
 }
 
 .empty {
-  grid-area: empty;
   height: 98vh;
+  grid-area: empty;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #bbbbbb;
+  padding-right: 10px;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 28px;
+}
+
+.empty a {
+  color: #212121;
+  text-decoration: none;
+}
+
+.empty a:hover {
+  color: #bbbbbb;
 }
